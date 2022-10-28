@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Thank you for your interest.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">  
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <!-- owl-carousel css -->
+  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"> 
+
+  <!-- Css style -->
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+
+  <!-- fave icons -->
+  <link rel="apple-touch-icon" sizes="57x57" href="images/faveicons/apple-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="images/faveicons/apple-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="images/faveicons/apple-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="images/faveicons/apple-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="images/faveicons/apple-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="images/faveicons/apple-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="images/faveicons/apple-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="images/faveicons/apple-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="images/faveicons/apple-icon-180x180.png">
+  <link rel="icon" type="image/png" sizes="192x192"  href="/android-icon-192x192.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/faveicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/faveicons/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/faveicons/favicon-16x16.png">
+  
+  <meta name="msapplication-TileColor" content="#AF862E">
+  <meta name="msapplication-TileImage" content="images/faveicons/ms-icon-144x144.png">
+  <meta name="theme-color" content="#AF862E">
+
+  <style type="text/css">
+    .thank-you-section{
+      padding: 2rem 0;
+    }
+    .green-text{color: var(--green);}
+    .brand-img img{width: 120px;}
+
+    .addeventatc{font-family: var(--font-family-poppins) !important;}
+    .heading-box{padding: 0;}
+    .share-button{display: inline; cursor: pointer;}
+    .share-button > img, .share-list a > img{transition: .3s all;}
+    .share-button:hover > img, .share-list a:hover > img{opacity: .5;}
+    .share-list {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background: var(--white);
+      padding: 0.8rem;
+      border-radius: 1rem;
+      box-shadow: 2px 2px 6px 1px rgb(0 0 0 / 12%);
+      display: inline-block;
+      align-content: space-evenly;
+      width: 214px;
+      text-align: left;
+      bottom: 0;
+      z-index: -1;
+      opacity: 0;
+      transition: .5s all;
+  }
+  .share-list.active{
+    bottom: -10px;
+    z-index: 99;
+    opacity: 1;
+  }
+  .share-list a {
+    margin: 0.2rem;
+    display: inline-block;
+}
+
+.share-list .title-2 {
+    font-size: 1rem;
+    font-weight: var(--w-600);
+    margin-bottom: 0.5rem;
+    border-bottom: solid 1px var(--gray-5);
+    padding-bottom: 0.5rem;
+}
+
+.share-list a > img{
+  width: 27px;
+}
+
+.share-item img {
+    width: 16px;
+}
+
+@media(max-width: 768px){
+  .share-list{
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100%;
+    bottom: -100px;
+    text-align: center;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 1.5rem;
+  }
+  .share-list.active{bottom: 0;}
+  .share-list a > img{
+    width: 45px;
+  }
+}
+
+.checkmark__circle {
+  stroke-dasharray: 166;
+    stroke-dashoffset: 166;
+    stroke-width: 2;
+    stroke-miterlimit: 10;
+    stroke: var(--green);
+    fill: whitesmoke;
+    animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.checkmark {
+ width: 76px;
+    height: 76px;
+    border-radius: 50%;
+    display: block;
+    stroke-width: 2;
+    stroke: var(--green);
+    stroke-miterlimit: 10;
+    margin: auto;
+    box-shadow: inset 0px 0px 0px #7ac142;
+    animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+    background: var(--gray-5);
+}
+
+.checkmark__check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes scale {
+  0%, 100% {
+    transform: none;
+  }
+  50% {
+    transform: scale3d(1.1, 1.1, 1);
+  }
+}
+@keyframes fill {
+  100% {
+    box-shadow: inset 0px 0px 0px 30px #7ac142;
+  }
+}
+
+.share-item {
+    display: inline-block;
+    border: solid 1px var(--gray-2);
+    padding: 0.3rem 0.6rem;
+    border-radius: 0.3rem;
+}
+
+  </style>
+
+</head>
+<body>
+<section class="thank-you-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="text-center">
+          <div class="brand-img">
+            <a href="index.html">
+              <img class="img-fluid" src="images/india-debt-capital-market-summit-logo-2.png" loading="lazy" alt="2nd Edition India Debt Capital Market Summit">
+            </a>
+          </div>          
+          <div class="mt-2">
+            <svg class="checkmark mt-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
+                <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"/>
+                <path class="checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
+              </svg>
+          </div>
+          <h1 class="green-text mt-1 title">Thank you for showing interest to attend the India Debt Capital Market Summit.</h1>
+          <p class="text-1 mt-1">
+                You will soon receive a confirmation with additional details!
+              </p>
+
+         
+          <div class="mt-1">
+            
+            <h3 class="title mt-1">Venue:</h3>
+
+            <p class="text mt-1">
+              Jio World Convention Center, BKC, Mumbai
+            </p>
+
+            <div class="mt-1">
+              <!-- <button class="btn btn-primary">
+                <img src="images/icons/calendar-icon.svg"> Add to Calendar
+              </button> -->
+
+              <!-- Button code -->
+              <!-- <div title="Add to Calendar" class="addeventatc">
+                  Add to Calendar
+                  <span class="start">11/11/2022 08:00 AM</span>
+                  <span class="end">11/11/2022 04:00 PM</span>
+                  <span class="timezone">Asia/Kolkata</span>
+                  <span class="title">TrustGroup 2nd Edition India Capital Market Summit</span>
+                  <span class="description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry'..</span>
+                  <span class="location">2nd Edition India Capital Market Summit 2022, at Jio World Center BKC Mumbai</span>
+                <span class="organizer">Trust Group</span>
+              </div>   -->            
+              <div class="share-button p-relative">
+                <div class="share-item" id="shareEvent" >
+                  Share<img class="ml-1"src="images/icons/share-icon.svg">
+                </div>
+
+                <div class="share-list">
+
+                  <div class="title-2">Share Via</div>
+
+                  <a href="https://api.whatsapp.com/send?text=Trust Presents 2nd Edition India Capital Market Summit $https://www.trustgroup.in" target="_blank">
+                    <img src="images/social-icon/whatsApp.svg">
+                  </a>
+                  <a  target="_blank" href="
+                    https://www.facebook.com/sharer/sharer.php?quote=Trust Presents 2nd Edition India Capital Market Summit 2022&u=https://www.trustgroup.in
+                  ">
+                    <img class="fb-share-button" data-href="https://www.trustgroup.in" data-layout="button_count" src="images/social-icon/facebook.svg">
+                  </a>
+                  <a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=https://www.trustgroup.in">
+                    <img src="images/social-icon/linkedin.svg">
+                  </a>
+                  <a target="_blank" href="https://t.me/share/url?url=https://www.trustgroup.in&text=Trust Presents 2nd Edition India Capital Market Summit 2022">
+                    <img src="images/social-icon/telegram.svg">
+                  </a>
+                  <a target="_blank" href="https://twitter.com/intent/tweet?text=Trust Presents 2nd Edition India Capital Market Summit 2022&url=https://www.trustgroup.in">
+                    <img src="images/social-icon/twitter.svg">
+                  </a>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="contact">
+  <div class="footer-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-7">
+          <div class="about-box">
+            <img width="94" height="94" class="lazyimg"  src="images/trust-circle-logo.png" loading="lazy" alt="Trust">
+            <h3 class="title-2 mt-1">About Us</h3>
+            <p class="text-1 mt-1">
+              TRUST is one of India's leading full-service financial house. We provide solutions and services across multiple asset classes like debt, equity and real estate. We partner with clients for their investment banking, capital market services, asset management and advisory, and wealth management and family office advisory needs. <a href="https://trustgroup.in/who-we-are.php" target="_blank">Read more.</a>
+            </p>
+            <div class="social-icon mt-1">
+              <a href="#"><img loading="lazy" class="lazyimg" width="45" height="45" src="images/social-icon/linkedin.svg"></a>
+              <a href="#"><img loading="lazy" class="lazyimg" width="45" height="45" src="images/social-icon/twitter.svg"></a>            
+              <a href="#"><img loading="lazy" class="lazyimg" width="45" height="45" src="images/social-icon/whatsApp.svg"></a>
+              <a href="#"><img loading="lazy" class="lazyimg" width="45" height="45" src="images/social-icon/facebook.svg"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="location-bg">
+            <ul>
+              <li>
+                <img loading="lazy" class="lazyimg" src="images/icons/flag-icon.svg" alt="Flag"> <span class="title-2"><strong>Event Location</strong></span>
+              </li>
+            </ul>
+            <div class="divider"></div>
+            <ul>
+              <li>
+                <img loading="lazy" class="lazyimg" src="images/icons/location-icon.svg" alt="Flag"> <span>Jio World Convention Center </span>
+              </li>
+              <li>
+                <a href="tel:+1 888-856-8989">
+                  <img loading="lazy" class="lazyimg" src="images/icons/call-icon.svg" alt="Flag"> <span>+1 888-856-8989</span>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:eventcamppremium@gmail.com">
+                  <img loading="lazy" class="lazyimg" src="images/icons/email-icon.svg" alt="Flag"> <span>eventcamppremium@gmail.com</span>
+                </a>
+              </li>
+            </ul>
+            <div class="divider"></div>
+            <div class="mt-1">
+                <a href="#registration" class="btn btn-primary d-block st-open-modal event-click">Register Now</a>
+              </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="secondary-footer text-center">
+    © <span id="fullYear"></span> Trust Group. Trademarks and brands are the property of their respective owners
+  </div>
+</footer>
+
+
+<div class="st-modal registration" data-modal="registration">
+  <div class="ds-card-box">
+    <div class="square-card">
+      <div class="ds-close">
+        <img src="images/icons/close-icon.svg">
+      </div>
+      <!-- <div class="md-hading b-bottom">
+        <h3 class="title-2" id="dataTitle">Debt IPOs</h3>        
+      </div> -->
+      <div class="md-body form" id="dataInfo">
+        <form id="contact-form" novalidate="novalidate">
+            <div>
+              <div class="text-center">
+                <h3 class="title-3">REGISTER FOR THE SUMMIT</h3>
+                <p>Or Give Us a Call: <a href="tel:+1 888-856-8989">+1 888-856-8989</a></p>
+              </div>
+              <div class="form-area mt-1">
+                <div class="form-input">
+                  <input type="text" minlength="3" name="inputName" id="inputName" class="form-control" placeholder="Name" required="">
+                </div>
+                <div class="form-input">
+                  <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email" required="">
+                </div>
+                <div class="form-input">
+                  <input type="number" name="inputNumber" id="inputNumber" class="form-control" minlength="10" maxlength="10" placeholder="Mobile" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please enter valid Mobile Number" required>
+                </div>              
+              </div>  
+              <div class="mt-1 p-relative">
+                <button id="reused_form" class="btn btn-primary border-0 d-block">Submit</button>
+              </div>                        
+            </div>  
+            
+          </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<script src="js/jquery.min.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/validate.min.js"></script>
+<script src="js/form.js"></script>
+<script src="js/calendar.js"></script>
+
+<script type="text/javascript">
+  $("#shareEvent").on("click", function(){
+    $(this).siblings(".share-list").addClass("active");
+  });
+</script>
+
+
+
+
+</body>
+</html>
