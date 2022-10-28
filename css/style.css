@@ -1847,7 +1847,7 @@ header.active{
 
 
 
-.title-2{font-size: 1.7rem;}
+.title-2{font-size: 1.5rem;}
 .title-3{font-size: 1.5rem;}
 .title-4{font-size: 1rem;}
 
@@ -2265,6 +2265,10 @@ input[type=number] {
 .location-bg li {
     list-style: none;
     margin-bottom: .5rem;color: var(--white);
+
+}
+.location-bg li, .location-bg li a{
+        display: flex;
 }
 
 .location-bg li a{color: var(--white);text-decoration: none;}
