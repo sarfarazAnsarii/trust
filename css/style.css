@@ -2269,6 +2269,7 @@ input[type=number] {
 }
 .location-bg li, .location-bg li a{
         display: flex;
+        align-items: center;
 }
 
 .location-bg li a{color: var(--white);text-decoration: none;}
@@ -2434,7 +2435,7 @@ div#timer {
 @media(max-width: 768px){
     .event .square-card, .bonds-card figure img{width: 100%;}
     .location-bg li span{
-        margin-left: 0.5rem;
+        margin-left: 0.8rem;
     }
     .location-bg{
         padding: 1rem;
