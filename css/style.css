@@ -1,7 +1,7 @@
 :root {    
     --brand-color: #843D1D;
     --brand-hover: #7C3515;
-    --golden-color: #AF862E;
+    --golden-color: #A8802D;
     --brand-dark: #6D4E09;
     --dark-gray: #232020;
     --gray-light: #f5f5f5;
@@ -1354,7 +1354,7 @@ h2{
     position: absolute;
     z-index: -1;
     border-radius: 10px;
-    background: linear-gradient(to bottom right, #B3721D, #E0B444, #B3721D, #E0B444);
+    background: linear-gradient(to bottom right, #B3721D, #A8802D, #B3721D, #A8802D);
     top: -2px;
     left: -2px;
     right: -2px;
@@ -2255,6 +2255,13 @@ input[type=number] {
     display: -webkit-box;
     -webkit-box-orient: vertical;
 }
+/*.agenda-section .bonds-card {
+    margin-bottom: 2rem;
+    background-image: url(../images/pillar.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: auto;
+}*/
 .prev-box {
     overflow: hidden;
     border-radius: 1rem;
@@ -2320,7 +2327,7 @@ input[type=number] {
     background: #7b3312;
     color: var(--white);
     font-size: .8rem;
-    padding: 1rem 0;
+    padding: .7rem 0;
 }
 
 /*timer css*/
