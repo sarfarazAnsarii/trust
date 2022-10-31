@@ -2283,9 +2283,9 @@ input[type=number] {
 
 .location-bg {
     background: var(--golden-color);
-    padding: 2.5rem;
+    padding: 1.5rem;
     margin-left: auto;
-    border-radius: 1.5rem;
+    border-radius: 1rem;
 }
 .location-bg li {
     list-style: none;
@@ -2300,7 +2300,7 @@ input[type=number] {
 .location-bg li a{color: var(--white);text-decoration: none;}
 .location-bg li a:hover span{text-decoration: underline;}
 
-.location-bg li span{margin-left: 1rem;}
+.location-bg li span{margin-left: 1rem;font-size: .9rem;}
 .location-bg li a span{line-break: anywhere;}
 .location-bg li:last-child {
     margin-bottom: 0;
@@ -2318,17 +2318,22 @@ input[type=number] {
 .footer-main {
     background: var(--brand-color);
     padding: 3rem 0;
+    background-image: url(../images/footer-bg.png);
+    background-size: 100%;
 }
-.about-box .title-2, .about-box .text-1{color: var(--white);}
+.about-box .title-2, .about-box .text-1 {
+    color: var(--dark-gray);
+}
 .about-box .text-1 a {
     color: var(--golden-color);
 }
 .secondary-footer {
-    background: #7b3312;
-    color: var(--white);
+    background: #FEF2E5;
+    color: var(--dark-gray);
     font-size: .8rem;
-    padding: .7rem 0;
+    padding: .7rem;
 }
+.footer-main .divider{margin: 1rem 0;}
 
 /*timer css*/
 
@@ -2477,8 +2482,14 @@ div#timer {
         height: 320px;
         object-fit: cover;
     }*/
+    .footer-main{
+        padding: 1.5rem 0;
+    }
     
 }
+
+.footer-main .text-1{font-size: .85rem;}
+
 @media(max-width: 575px){
     .agenda-row .bonds-card .title-2, .agenda-row .bonds-card .text-1{
         height: auto;
