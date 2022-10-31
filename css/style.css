@@ -1884,9 +1884,11 @@ header.active{
     height: auto;
 }
 
+.brand{margin: auto;}
+
 @media(max-width: 991px){
     .main-section {
-        margin-top: 73px;
+        margin-top: 58px;
     }
 
 }
@@ -1911,6 +1913,8 @@ header.active{
         width: 130px;
         height: 134px;
     }
+
+    .brand{margin: inherit;}
 }
 
 
@@ -2450,6 +2454,17 @@ div#timer {
     color: var(--gray-2) !important;
 }
 .full-img img{width: 100%;}
+.top_left {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    /*border: solid 1px var(--golden-color);*/
+    border-radius: 100%;
+    width: 80px;
+}
+.main-header .flex-wrap.flex-center{
+    height: 45px;
+}
 
 @media(max-width: 991px){
     .location-bg{margin-top: 2rem;}
@@ -2485,6 +2500,10 @@ div#timer {
     .footer-main{
         padding: 1.5rem 0;
     }
+    .main-header .flex-wrap.flex-center {
+        height: auto;
+    }
+    .top_left{width: 60px;}
     
 }
 
