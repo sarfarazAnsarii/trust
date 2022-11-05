@@ -1304,21 +1304,21 @@ h2{
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
-    border: solid 0.1rem var(--dark-gray);
+    border: solid 0.1rem #814231;
     padding: 0.75rem 1.5rem;
     font-size: 1.2rem;
     line-height: 1;
     cursor: pointer;
-    color: var(--dark-gray) !important;
+    color: var(--white) !important;
     border-radius: 0.25rem;
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
     border-radius: .3rem;
 }
 
 .btn-primary{
-	background-color: #FEF2E5;
-	font-weight: var(--w-600);
-    color: var(--dark-gray);
+	background-color: #814231;
+    font-weight: var(--w-600);
+    color: var(--white);
 }
 
 .btn-border{
@@ -1902,9 +1902,9 @@ header.active{
         font-size: 1rem;
     }   
 
-    .agenda-row .bonds-card .title-2{
+    /*.agenda-row .bonds-card .title-2{
         height: 57px;
-    }  
+    }  */
     
     .banner-img{
         height: auto;
@@ -2187,7 +2187,7 @@ input[type=number] {
     color: var(--dark-gray);
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid #FEF2E5;
+    border: 1px solid #814231;
     border-radius: 0.65rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
@@ -2254,7 +2254,7 @@ input[type=number] {
     -webkit-box-orient: vertical;
 }
 .agenda-row .bonds-card .title-2 {
-    height: 62px;
+    height: auto;
     overflow: hidden;
     -webkit-line-clamp: 2;
     display: -webkit-box;
@@ -2333,8 +2333,8 @@ input[type=number] {
     color: var(--golden-color);
 }
 .secondary-footer {
-    background: #FEF2E5;
-    color: var(--dark-gray);
+    background: #814231;
+    color: var(--white);
     font-size: .8rem;
     padding: .7rem;
 }
