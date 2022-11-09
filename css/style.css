@@ -1891,7 +1891,7 @@ header.active{
 
 @media(max-width: 991px){
     .main-section {
-        margin-top: 58px;
+        margin-top: 73px;
     }
 
 }
@@ -2492,7 +2492,7 @@ div#timer {
     .sharing-fixed{display: none;}
     .full-img img {
         width: 100%;
-        height: 90px;
+        height: 60px;
         object-position: bottom;
         object-fit: cover;
     }
