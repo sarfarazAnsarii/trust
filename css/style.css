@@ -60,7 +60,8 @@ body {
     text-align: left;
     background-color: var(--gray-light);
     font-style: normal;
-    scroll-behavior: smooth
+    scroll-behavior: smooth;
+    counter-reset: section + 1;
 }
 
 
@@ -1851,6 +1852,7 @@ header.active{
 .title-2{font-size: 1.5rem;}
 .title-3{font-size: 1.5rem;}
 .title-4{font-size: 1rem;}
+.line-height-3{line-height: 1.7rem;}
 
 .title{
     font-size: 2rem;
@@ -2199,7 +2201,7 @@ input[type=number] {
 }
 .over-hide{overflow: hidden;}
 .md-hading {
-    padding: 1rem 1.5rem;
+    padding: 1.5rem 3rem 1rem 1.5rem;
 }
 .md-body{
     padding: 1rem 1.5rem 1.5rem 1.5rem;
@@ -2247,7 +2249,7 @@ input[type=number] {
     
 }
 .agenda-row .bonds-card .text-1 {
-    height: 123px;
+    height: 72px;
     overflow: hidden;
     -webkit-line-clamp: 5;
     display: -webkit-box;
@@ -2474,6 +2476,7 @@ div#timer {
         padding: 1.5rem 0;
     }
     .about-section{padding-top: 1.5rem;}
+    .lg-mt-1{margin-top: 1rem;}
 
     
 }
@@ -2509,6 +2512,25 @@ div#timer {
 }
 
 .footer-main .text-1{font-size: .85rem;}
+
+/*.square-card .container-fluid .col-lg-6 .flex-wrap > .user-img{
+    position: relative;
+}
+
+.square-card .container-fluid .col-lg-6 .flex-wrap > .user-img:after {
+    content: "";
+    position: absolute;
+    right: 2px;
+    background: var(--golden-color);
+    width: 8px;
+    height: 8px;
+    text-align: center;
+    border-radius: 100%;
+    top: 1px;
+    font-size: .7rem;
+    line-height: 1.3rem;
+    color: var(--white);
+}*/
 
 @media(max-width: 575px){
     .agenda-row .bonds-card .title-2, .agenda-row .bonds-card .text-1{
