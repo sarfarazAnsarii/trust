@@ -1891,7 +1891,7 @@ header.active{
 
 @media(max-width: 991px){
     .main-section {
-        margin-top: 73px;
+        margin-top: 58px;
     }
 
 }
@@ -2538,3 +2538,4 @@ div#timer {
     }
 }
 
+.event-click{display: none;}
