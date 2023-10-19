@@ -1577,6 +1577,7 @@ label.error {
 .p-relative{position: relative;}
 .brand-color{color: var(--brand-color)}
 .golden-color{color: var(--golden-color);}
+.white-color{color: var(--white);}
 .font14{font-size: 0.90rem;}
 .font13{font-size: 0.75rem;}
 .font12{font-size: 0.65rem !important;}
@@ -1809,15 +1810,30 @@ header.active{
 
 
 .heading-box {
-    width: 709px;
+    width: 100%;
     margin: auto;
-    padding: 4rem 0;
+       padding: 110px 0;
 }
-
+.bg-blur{
+    backdrop-filter: blur(5px);
+}
 .banner-img{
     background: url(../images/main-banner.jpg) no-repeat center top;
     background-size: cover !important;
     height: auto;
+}
+
+.bg-circle {
+    background: #fff;
+    width: 130px;
+    margin: auto;
+    padding: 30px;
+    border-radius: 100%;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    border: solid 6px #af8a3e30;
 }
 
 .brand{margin: auto;}
@@ -1844,7 +1860,6 @@ header.active{
     .banner-img{
         height: auto;
     }
-    .heading-box{width: 100%;}
     .main-section .heading-box .text-center > img {
         width: 130px;
         height: 134px;
