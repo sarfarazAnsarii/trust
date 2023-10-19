@@ -1,6 +1,7 @@
 $(".toggleMenu").on("click", function(){
 	$(this).toggleClass("active");
-	$(this).siblings(".main-nav").toggleClass("active");	
+	$("#mobiNav").toggleClass("active");
+	// $(this).siblings(".main-nav").toggleClass("active");	
 });
 
 
@@ -59,6 +60,7 @@ function checkPosition() {
         $(".main-nav li a").on("click", function(){
         	$(this).parents(".main-nav").removeClass("active");
         	$(this).parents(".main-nav").siblings().removeClass("active");
+        	$("#mobiNav").removeClass("active");
         })
     } else {
         //...

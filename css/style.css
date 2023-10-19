@@ -1751,29 +1751,7 @@ header.active{
 
 @media(max-width: 768px){
     .top-header{display: none;}
-    .main-nav {
-        position: fixed;
-        left: -300px;
-        top: 0;
-        bottom: 0;
-        margin: auto;
-        background: var(--dark-gray);
-        display: block;
-        padding: 1.5rem;
-        width: 280px;
-        overflow: auto;
-        transition: 0.5s all
-    }
-    .main-nav.active{left: 0;}
-    .main-nav li a{
-        color: var(--white);
-        font-size: 1rem;
-        display: block;
-    }
-    .main-nav li{
-        margin: 0 0 0.5rem 0;
-        padding: 0 0 0.5rem 0;
-    }
+    
     .drop-down {
         position: relative;
         top: 0;
@@ -1795,52 +1773,7 @@ header.active{
     .drop-down li a{
         padding: 0.4rem;
     }
-    .hidden-xs{display: block;}
-    .toggleMenu {
-        width: 2rem;
-        height: 1.6rem;
-    }
-
-    .toggleMenu span {
-        width: 2rem;
-        background: var(--brand-color);
-        height: 0.15rem;
-        display: block;
-        position: relative;
-        transition: .3s all;
-    }
-    .toggleMenu span:nth-child(2){
-        margin: 0.4rem 0
-    }
-    .toggleMenu.active span:nth-child(1) {
-        transform: rotate(45deg);
-        position: relative;
-        top: 11px;
-    }
-    .toggleMenu.active span:nth-child(3) {
-        transform: rotate(-45deg);
-        top: 9px;
-    }
-    .toggleMenu.active span:nth-child(2) {
-        display: none;
-    }
-
-    .toggleMenu.active {
-        position: fixed;
-        left: 230px;
-        top: 20px;
-        z-index: 99;
-    }
-    .toggleMenu.active span{background: var(--white);}
-
-
-    .main-header{
-        top: 0;
-        position: fixed;
-        width: 100%;
-        background: var(--white);
-        z-index: 99
-    }
+    
 
    
 }
@@ -2242,11 +2175,9 @@ input[type=number] {
 .agenda-section .bonds-card .img-fluid{width: 100%;filter: blur(14px);}
 .prevew-img {
     width: 100%;
-    height: 220px;
+    height: 100%;
     object-fit: cover;
     transition: .5s all;
-    filter: brightness(0.5);
-    
 }
 .agenda-row .bonds-card .text-1 {
     height: 72px;
@@ -2468,8 +2399,29 @@ div#timer {
 .main-header .flex-wrap.flex-center{
     height: 45px;
 }
-
+.regsiter-mob{display: none;}
 @media(max-width: 991px){
+
+    .secondary-footer {
+        margin-bottom: 63px;
+    }
+
+    .regsiter-mob {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        padding: 10px;
+        background: rgb(255 255 255);
+    }
+
+    .sharing-fixed{display: none}
+    .main-header .flex-wrap.flex-center{
+        height: auto;
+    }
+
     .location-bg{margin-top: 2rem;}
     .full-img{margin-top: 1.5rem;text-align: center;}
     .section-pd {
@@ -2477,6 +2429,88 @@ div#timer {
     }
     .about-section{padding-top: 1.5rem;}
     .lg-mt-1{margin-top: 1rem;}
+
+    .hidden-xs{display: block;}
+    .toggleMenu {
+        width: 2rem;
+        height: 1.6rem;
+    }
+
+    .toggleMenu span {
+        width: 2rem;
+        background: var(--brand-color);
+        height: 0.15rem;
+        display: block;
+        position: relative;
+        transition: .3s all;
+    }
+    .toggleMenu span:nth-child(2){
+        margin: 0.4rem 0
+    }
+    .toggleMenu.active span:nth-child(1) {
+        transform: rotate(45deg);
+        position: relative;
+        top: 11px;
+    }
+    .toggleMenu.active span:nth-child(3) {
+        transform: rotate(-45deg);
+        top: 9px;
+    }
+    .toggleMenu.active span:nth-child(2) {
+        display: none;
+    }
+
+    .toggleMenu.active {
+        position: fixed;
+        left: 230px;
+        top: 20px;
+        z-index: 99;
+    }
+    .toggleMenu.active span{background: var(--white);}
+
+
+    .main-header{
+        top: 0;
+        position: fixed;
+        width: 100%;
+        background: var(--white);
+        z-index: 99
+    }
+
+    .logo img{
+        width: 70px;
+    }
+
+    .brand{
+        display: flex;
+    align-items: center;
+    width: 100%;
+    }
+    .logo{margin-left: auto;}
+
+    .main-nav {
+        position: fixed;
+        left: -300px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        background: var(--dark-gray);
+        display: block;
+        padding: 1.5rem;
+        width: 280px;
+        overflow: auto;
+        transition: 0.5s all
+    }
+    .main-nav.active{left: 0;}
+    .main-nav li a{
+        color: var(--white);
+        font-size: 1rem;
+        display: block;
+    }
+    .main-nav li{
+        margin: 0 0 0.5rem 0;
+        padding: 0 0 0.5rem 0;
+    }
 
     
 }
