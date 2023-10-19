@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
   <!-- owl-carousel css -->
-  <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css"> 
+  <!-- <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">  -->
 
   <!-- Css style -->
   <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css">
@@ -536,31 +536,39 @@
       </div> -->
       <div class="md-body form">
         <form id="contact-form" novalidate="novalidate">
+            <!-- <input type="hidden" name="inputYear" value="2023" > -->
             <div>
               <div class="text-center">
                 <h3 class="title-3">REGISTER FOR THE SUMMIT</h3>
                 <!-- <p class="text-1">Or Give Us a Call: <a href="tel:+1 888-856-8989">+1 888-856-8989</a></p> -->
               </div>
               <div class="form-area mt-1">
-                <div class="form-input">
+                <div class="form-group">
                   <div class="form-input">
-                  <input type="text" minlength="3" name="inputName" id="inputName" class="form-control" placeholder="Name" required="">
-                </div>
-                  <input type="text" minlength="3" name="inputOrg" id="inputOrg" class="form-control" placeholder="Organization" required="">
-                </div>
-                <div class="form-input">
-                  <input type="text" minlength="3" name="inputDesig" id="inputDesig" class="form-control" placeholder="Designation" required="">
-                </div>
+                    <label class="f-label">Name</label>
+                    <input type="text" minlength="3" name="inputName" id="inputName" class="form-control" required="">
+                  </div>
+                  
                 
                 <div class="form-input">
-                  <input type="email" name="inputEmail" id="inputEmail" class="form-control" placeholder="Email" required="">
+                  <label class="f-label">Email</label>
+                  <input type="email" name="inputEmail" id="inputEmail" class="form-control" required="">
                 </div>
                 <div class="form-input">
-                  <input type="number" name="inputNumber" id="inputNumber" class="form-control" minlength="10" maxlength="10" placeholder="Mobile" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please enter valid Mobile Number" required>
-                </div>              
+                  <label class="f-label">Mobile</label>
+                  <input type="number" name="inputNumber" id="inputNumber" class="form-control" minlength="10" maxlength="10"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please enter valid Mobile Number" required>
+                </div>  
+                <div class="form-input"> 
+                    <label class="f-label">Organization</label>
+                    <input type="text" minlength="3" name="inputOrg" id="inputOrg" class="form-control" required="">
+                  </div>
+                <div class="form-input">
+                  <label class="f-label">Designation</label>
+                  <input type="text" minlength="3" name="inputDesig" id="inputDesig" class="form-control"  required="">
+                </div>            
               </div>  
               <div class="mt-1 p-relative">
-                <button id="reused_form" class="btn btn-primary border-0 d-block">Submit</button>
+                <button class="btn btn-primary border-0 d-block">Submit</button>
               </div>                        
             </div>  
             
@@ -1270,6 +1278,10 @@ document.getElementById("fullYear").textContent = fullYear
 
 <script type="text/javascript">
 
+ 
+
+    
+
   $('[data-fancybox="gallery"]').fancybox({
     buttons: [
       "slideShow",
@@ -1284,6 +1296,24 @@ document.getElementById("fullYear").textContent = fullYear
   });
    
 
+    $(document).on("focus", ".form-control", function(){
+        $(this).siblings(".f-label").addClass("active");
+     });   
+     $(document).on("click", ".f-label" , function(){
+        $(this).siblings(".form-control").focus();
+    });
+
+     $(document).on("blur", ".form-control", function(){
+
+        if($(".form-control").val()!==""){
+            $(this).siblings(".f-label").addClass("active");
+        }else{
+
+          $(this).siblings(".f-label").removeClass("active");
+        }
+
+     });
+
     $(document).ready(function(){
       $( ".main-nav li a" ).click(function( event ) {
           event.preventDefault();
@@ -1292,7 +1322,7 @@ document.getElementById("fullYear").textContent = fullYear
   });
 
 
-
+    
 
   </script>
 

@@ -1426,8 +1426,8 @@ img, span, label{
     color: var(--dark-gray);
     background-color: #fff;
     background-clip: padding-box;
-    border: 1px solid var(--gray-2);
-    border-radius: 0.65rem;
+    border: 1px solid #919191;
+    border-radius: 0.4rem;
     transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
@@ -2128,24 +2128,47 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-.form-control {
-    display: block;
-    width: 100%;
-    padding: 0.55rem 1rem;
-    font-size: 1.1rem;
-    line-height: 2;
-    color: var(--dark-gray);
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 1px solid #814231;
-    border-radius: 0.65rem;
-    transition: border-color .15s ease-in-out, box-shadow .15s ease-in-out;
-}
 .form-input {
     margin-bottom: 1rem;
+    position: relative;
 }
 .form-input:last-child {
     margin-bottom: 0;
+}
+
+.form-input label{
+   
+}
+
+.f-label{
+    font-size: .9rem;
+    margin-bottom: 0;
+    color: #814231;
+    line-height: 46px;
+    position: absolute;
+    width: 50%;
+    height: 47px;
+    background: transparent;
+    border-radius: 0.4rem;
+    border: navajowhite;
+    transition: .5s all;
+    left: 15px;
+    top: 2px;
+}
+.f-label.active {
+    top: -8px;
+    padding: 0;
+    display: block;
+    
+    background: white;
+    width: auto;
+    height: auto;
+    left: 12px;
+    line-height: 16px;
+    font-size: .75rem;
+    border: none;
+    padding: 1px 7px;
+    border-radius: 0.2rem;
 }
 .over-hide{overflow: hidden;}
 .md-hading {

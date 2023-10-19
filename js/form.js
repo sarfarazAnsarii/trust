@@ -48,8 +48,7 @@ $(document).ready(function() {
         var inputEmail = $("#inputEmail").val();
         
         // var time = new Date().fullDate();
-        var date = new Date();
-            current_date = date.getFullYear()+"-"+(date.getMonth()+1)+"-"+ date.getDate();
+        
        
         const person = {
             company: inputOrg,
@@ -57,13 +56,12 @@ $(document).ready(function() {
             name: inputName,                 
             email: inputEmail,
             mobile:inputNumber,
-            date:current_date
         }     
        
         console.log(person);        
 
         $.ajax({
-            url:"https://api.apispreadsheets.com/data/HjKnZOLJqlDeDv9V/",
+            url:"../registration.php",
             type:"post",
             data:person,
             success: function(){
