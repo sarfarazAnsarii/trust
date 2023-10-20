@@ -1,4 +1,5 @@
 <?php
+require_once('config.php');
 
 $name = $_POST['name'];
 $email = $_POST['email'];
@@ -7,10 +8,10 @@ $org = $_POST['company'];
 $designation = $_POST['designation'];
 $year = date('Y');
 
-$servername = "localhost";
-$username = "root";
-$password = "password";
-$db = "summit";
+$servername = DB_HOST;
+$username = DB_USERNAME;
+$password =DB_PASSWORD;
+$db = DB_NAME;
 
 $conn = new mysqli($servername, $username, $password, $db);
 

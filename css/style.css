@@ -2143,7 +2143,7 @@ input[type=number] {
 .f-label{
     font-size: .9rem;
     margin-bottom: 0;
-    color: #814231;
+    color: var(--dark-gray);
     line-height: 46px;
     position: absolute;
     width: 50%;
@@ -2159,7 +2159,7 @@ input[type=number] {
     top: -8px;
     padding: 0;
     display: block;
-    
+    color: var(--brand-color);
     background: white;
     width: auto;
     height: auto;
