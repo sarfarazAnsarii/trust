@@ -2438,6 +2438,8 @@ div#timer {
     height: 45px;
 }
 .regsiter-mob{display: none;}
+
+
 @media(max-width: 991px){
 
     .secondary-footer {
@@ -2447,12 +2449,17 @@ div#timer {
     .regsiter-mob {
         display: block;
         position: fixed;
-        bottom: 0;
+        bottom: -100px;
         left: 0;
         right: 0;
         margin: auto;
         padding: 10px;
         background: rgb(255 255 255);
+        z-index: 98;
+        transition: .5s all;
+    }
+    .regsiter-mob.active{
+        bottom: 0;
     }
 
     .sharing-fixed{display: none}

@@ -11,7 +11,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-
+ 
   <!-- owl-carousel css -->
   <!-- <link rel="stylesheet" type="text/css" href="css/owl.carousel.min.css">  -->
 
@@ -467,6 +467,16 @@
   </div>
 </section>
 
+<div class="fixed-btm active">  
+  <a href="#" id="scrollTop" class="d-none">
+    <img src="images/icons/up-arrow-icon.svg">
+  </a>
+</div>
+
+<div class="regsiter-mob">
+  <a href="#registration" class="btn btn-primary st-open-modal event-click d-block">Register Now</a>
+</div>
+
 <footer id="contact">
   <div class="footer-main">
     <div class="container">
@@ -537,7 +547,7 @@
       <div class="md-body form">
         <form id="contact-form" novalidate="novalidate">
             <!-- <input type="hidden" name="inputYear" value="2023" > -->
-            <div>
+
               <div class="text-center">
                 <h3 class="title-3">REGISTER FOR THE SUMMIT</h3>
                 <!-- <p class="text-1">Or Give Us a Call: <a href="tel:+1 888-856-8989">+1 888-856-8989</a></p> -->
@@ -548,36 +558,32 @@
                     <label class="f-label">Name</label>
                     <input type="text" minlength="3" name="inputName" id="inputName" class="form-control" required="">
                   </div>
-                  
-                
-                <div class="form-input">
-                  <label class="f-label">Email</label>
-                  <input type="email" name="inputEmail" id="inputEmail" class="form-control" required="">
-                </div>
-                <div class="form-input">
-                  <label class="f-label">Mobile</label>
-                  <input type="number" name="inputNumber" id="inputNumber" class="form-control" minlength="10" maxlength="10"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please enter valid Mobile Number" required>
-                </div>  
-                <div class="form-input"> 
-                    <label class="f-label">Organization</label>
-                    <input type="text" minlength="3" name="inputOrg" id="inputOrg" class="form-control" required="">
+                  <div class="form-input">
+                    <label class="f-label">Email</label>
+                    <input type="email" name="inputEmail" id="inputEmail" class="form-control" required="">
                   </div>
-                <div class="form-input">
-                  <label class="f-label">Designation</label>
-                  <input type="text" minlength="3" name="inputDesig" id="inputDesig" class="form-control"  required="">
-                </div>            
+                  <div class="form-input">
+                    <label class="f-label">Mobile</label>
+                    <input type="number" name="inputNumber" id="inputNumber" class="form-control" minlength="10" maxlength="10"  pattern="[0-9]{3}[0-9]{3}[0-9]{4}" title="Please enter valid Mobile Number" required>
+                  </div>  
+                  <div class="form-input"> 
+                      <label class="f-label">Organization</label>
+                      <input type="text" minlength="3" name="inputOrg" id="inputOrg" class="form-control" required="">
+                    </div>
+                  <div class="form-input">
+                    <label class="f-label">Designation</label>
+                    <input type="text" minlength="3" name="inputDesig" id="inputDesig" class="form-control"  required="">
+                  </div>            
               </div>  
               <div class="mt-1 p-relative">
                 <button class="btn btn-primary border-0 d-block">Submit</button>
               </div>                        
-            </div>  
-            
-          </form>
-      </div>
+            </div>              
+        </form>
+      </div>      
     </div>
   </div>
 </div>
-
 <div class="st-modal event" data-modal="event1">
   <div class="ds-card-box">
     <div class="square-card">
@@ -1215,15 +1221,7 @@
   </ul>
 </div>
 
-<div class="fixed-btm active">  
-  <a href="#" id="scrollTop" class="d-none">
-    <img src="images/icons/up-arrow-icon.svg">
-  </a>
-</div>
 
-<div class="regsiter-mob">
-  <a href="#registration" class="btn btn-primary st-open-modal event-click d-block">Register Now</a>
-</div>
 
 
 <script src="js/jquery.min.js"></script>

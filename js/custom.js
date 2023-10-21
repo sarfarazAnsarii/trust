@@ -17,10 +17,12 @@ $(window).scroll(function(){
 		$("#scrollTop").fadeIn();
 		$(".invest-now-mob").addClass("active");
 		$(".fixed-btm").addClass("active");
+		$(".regsiter-mob").addClass("active");
 	}else{
 		$("#scrollTop").fadeOut();
 		$(".invest-now-mob").removeClass("active");
 		$(".fixed-btm").removeClass("active");
+		$(".regsiter-mob").removeClass("active");
 	}
 
 })
